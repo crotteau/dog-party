@@ -1,6 +1,7 @@
 @import 'variables';
 
 body {
+  padding-top: 1px;
   background: url('../../dist/images/park.jpg') center/cover;
   height: 100vh;
   width: 100%;
@@ -8,10 +9,122 @@ body {
 }
 
 nav {
-  // Example of using a variable:
-  background-color: $secondary-accent-color;
+    background-color: $secondary-accent-color;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -7px;
+    margin-left: -7px;
+    margin-right: 0px;
+    height: 70px;
+    border-top: solid;
+    border-color: #858585;
 }
 
 .dog-icon {
-  width: 50px;
+  width: 43px;
+  padding-left: 28px;
+}
+
+menu {
+  margin-right: 55px;
+}
+
+.menu-button {
+  font-family: $main-font;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  border: none;
+  background-color: $secondary-accent-color;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 690px;
+}
+
+.main-dog {
+  width: 395px;
+  @include round-pic
+}
+
+.what-are-dogs {
+  height: 55px;
+  width: 205px;
+  margin-top: 16px;
+  @include dog-button
+}
+
+h1 {
+  margin-top: 70px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.how-what-section {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  height: 700px;
+  padding-top: 69px;
+}
+
+.dog {
+  @include round-pic;
+  height: 272px;
+  margin-top: 30px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 400;
+  padding: 0px 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.dog-button {
+  @include dog-button();
+  height: 50px;
+  width: 170px;
+}
+
+.how {
+  margin-left: 40px
+}
+
+.facts {
+  margin-right: 40px;
+}
+
+footer {
+  background-color: $main-accent-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 280px;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.media {
+  padding: 0px 30px;
+  height: 60px;
+}
+
+a {
+  color: white;
 }
