@@ -1,3 +1,25 @@
 $main-accent-color: #3F8DA8;
 $secondary-accent-color: #92E0E5;
 $main-font: "Raleway", sans-serif;
+
+@mixin round-pic() {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #3F8DA8;
+    border-width: thick;
+}
+
+@mixin dog-button() {
+    border-style: solid;
+    border-color: $main-accent-color;
+    border-width: thick;
+    font-family: $main-font;
+    font-size: 25px;
+    font-weight: 600;
+    color: $main-accent-color;
+    background-color: white;
+    
+    &:hover {
+        cursor: pointer;
+      }
+}
